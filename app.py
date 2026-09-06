@@ -44,7 +44,7 @@ st.write(
 # HUGGING FACE TOKEN
 # =========================================================
 
-token = os.environ.get("HUGGINGFACEHUB_API_TOKEN")
+token = st.secrets["HUGGINGFACEHUB_API_TOKEN"]
 
 if not token:
     st.error("Hugging Face token not found.")
