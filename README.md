@@ -1,12 +1,12 @@
 # ✈️ Aviation Supply Chain Analytics & AI Assistant
 
-An end-to-end **Aircraft Maintenance Supply Chain Analytics** project combining **SQL, Python, Power BI, RAG, FAISS, Llama 3.1, LangChain, and Streamlit** to analyze supply-chain performance and provide AI-powered insights.
+An end-to-end **Aviation Maintenance Supply Chain Analytics** project combining **SQL, Python, Power BI, RAG, FAISS, Llama 3.1, LangChain, and Streamlit** to analyze supply-chain performance and provide AI-powered insights.
 
 ## 📌 Project Overview
 
-Aircraft maintenance operations depend on the timely availability of critical parts, reliable suppliers, healthy inventory levels, and effective quality management.
+Aviation maintenance operations depend on the timely availability of critical parts, reliable suppliers, healthy inventory levels, and effective quality management.
 
-This project analyzes aircraft maintenance supply-chain data to identify:
+This project analyzes aviation maintenance supply-chain data to identify:
 
 - Supplier performance and risk
 - Inventory and backorder risks
