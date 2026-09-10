@@ -1,4 +1,4 @@
-# ✈️ Aircraft Supply Chain Analytics & AI Assistant
+# ✈️ Aviation Supply Chain Analytics & AI Assistant
 
 An end-to-end **Aircraft Maintenance Supply Chain Analytics** project combining **SQL, Python, Power BI, RAG, FAISS, Llama 3.1, LangChain, and Streamlit** to analyze supply-chain performance and provide AI-powered insights.
 
