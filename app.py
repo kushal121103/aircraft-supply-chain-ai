@@ -1,3 +1,4 @@
+%%writefile app.py
 
 import os
 import streamlit as st
@@ -22,7 +23,7 @@ from langchain_core.messages import AIMessage
 # =========================================================
 
 st.set_page_config(
-    page_title="Aircraft Maintenance Supply Chain AI Assistant",
+    page_title="Aviation Maintenance Supply Chain AI Assistant",
     page_icon="✈️",
     layout="wide"
 )
@@ -32,7 +33,7 @@ st.set_page_config(
 # TITLE
 # =========================================================
 
-st.title("✈️ Aircraft Maintenance Supply Chain AI Assistant")
+st.title("✈️ Aviation Maintenance Supply Chain AI Assistant")
 
 st.write(
     "Ask questions about supplier performance, inventory risk, "
@@ -44,7 +45,7 @@ st.write(
 # HUGGING FACE TOKEN
 # =========================================================
 
-token = st.secrets["HUGGINGFACEHUB_API_TOKEN"]
+token = os.environ.get("HUGGINGFACEHUB_API_TOKEN")
 
 if not token:
     st.error("Hugging Face token not found.")
@@ -99,7 +100,7 @@ retriever = vector_store.as_retriever(
 
 prompt = ChatPromptTemplate.from_template("""
 
-You are an AI assistant for an Aircraft Maintenance Supply Chain Analytics system.
+You are an AI assistant for an Aviation Maintenance Supply Chain Analytics system.
 
 Answer the user's question using ONLY the context provided below.
 
@@ -249,7 +250,7 @@ if len(st.session_state.messages) == 0:
             """
             👋 **Hello!**
 
-            I'm your **Aircraft Maintenance Supply Chain AI Assistant**.
+            I'm your **Aviation Maintenance Supply Chain AI Assistant**.
 
             I can help you with:
 
